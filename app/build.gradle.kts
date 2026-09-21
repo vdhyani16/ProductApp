@@ -65,6 +65,14 @@ dependencies {
     // 6. Standard Library
     implementation(libs.androidx.core.ktx)
 
+    // Coil for Jetpack Compose (Image loading)
+    implementation(libs.coil.compose)
+
+    // Hilt Navigation Compose (ViewModel inject karne ke liye)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
